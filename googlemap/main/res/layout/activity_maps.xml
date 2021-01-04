@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이동한 거리 선으로 연결"
+        android:background="@android:drawable/alert_light_frame"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/button"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이동한 거리로 폴리곤 만들기"
+        android:background="@android:drawable/alert_light_frame"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/polygonButton"
+        />
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    map:cameraZoom="15"
+    />
+
+</LinearLayout>
